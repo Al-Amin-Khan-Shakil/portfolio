@@ -17,7 +17,7 @@ body {
 /* design hero section */
 
 #hero {
-  background-image: url("./image/Header-llustration-desktop@2x.png");
+  background-image: url("../image/Header-llustration-desktop@2x.png");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -194,8 +194,8 @@ body #worksection {
 
 body #aboutme {
   background-image:
-    url("./image/illustration-about-me-2-desktop@2x.png"),
-    url("./image/Frame@2x.png");
+    url("../image/illustration-about-me-2-desktop@2x.png"),
+    url("../image/Frame@2x.png");
   background-repeat: no-repeat;
   background-size: 228px 127px, 269px 244px;
   background-position: 0% 39%, 100% 15%;
@@ -249,9 +249,9 @@ body #aboutme .aboutwrapper {
 
 body #form-section {
   background-image:
-    url("./image/Frame@contact.png"),
-    url("./image/illustration-2-contact-form-desktop@2x.png"),
-    url("./image/Frame@contact-2.png");
+    url("../image/Frame@contact.png"),
+    url("../image/illustration-2-contact-form-desktop@2x.png"),
+    url("../image/Frame@contact-2.png");
   background-repeat: no-repeat;
   background-size: 235px 261px, 130px 105px, 200px 490px;
   background-position: 0% 95%, 22% 85%, 100% 95%;
