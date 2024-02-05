@@ -108,7 +108,7 @@ body {
   width: 100vw;
   height: 653.32px;
   margin-top: 7.2vh;
-  background-image: url("./image/header-illsutration-mobile@2x.png");
+  background-image: url("../image/header-illsutration-mobile@2x.png");
   background-position: center top;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -397,7 +397,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: url("./image/Mask\ Group.png"), url("./image/Group.png");
+  background-image: url("../image/Mask\ Group.png"), url("../image/Group.png");
   background-repeat: no-repeat, no-repeat;
   background-position: 100% 0.4%, 0% 24%;
 }
@@ -550,7 +550,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("./image/Frame.png");
+  background-image: url("../image/Frame.png");
   background-repeat: no-repeat;
   background-position: 100% 90.2%;
 }
