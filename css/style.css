@@ -381,16 +381,16 @@ body {
 /* About me section */
 
 #aboutme {
-  width: 100%;
+  width: 100vw;
   height: auto;
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .aboutwrapper {
-  width: 375px;
+  width: 100vw;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -399,7 +399,16 @@ body {
   position: relative;
   background-image: url("../image/Mask\ Group.png"), url("../image/Group.png");
   background-repeat: no-repeat, no-repeat;
-  background-position: 100% 0.4%, 0% 24%;
+  background-position: 100% 0.4%, 0% 84%;
+}
+
+.skill-wrapper {
+  width: 81.38vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutbox {
@@ -459,7 +468,7 @@ body {
   background-color: #008552;
 }
 
-.aboutwrapper .skill-card {
+.skill-wrapper .skill-card {
   width: 327px;
   height: 316px;
   background-color: #ebf0ee;

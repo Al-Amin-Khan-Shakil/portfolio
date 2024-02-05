@@ -189,33 +189,38 @@ body #worksection {
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
-body #aboutme {
+/* body #aboutme {
   background-image:
     url("../image/illustration-about-me-2-desktop@2x.png"),
     url("../image/Frame@2x.png");
   background-repeat: no-repeat;
   background-size: 228px 127px, 269px 244px;
   background-position: 0% 39%, 100% 15%;
-}
+} */
 
 body #aboutme .aboutwrapper {
-  width: 81.38vw;
+  width: 100vw;
   height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  background-image: none;
   margin-top: 108px;
+  background-image:
+    url("../image/illustration-about-me-2-desktop@2x.png"),
+    url("../image/Frame@2x.png");
+  background-repeat: no-repeat;
+  background-size: 228px 127px, 269px 244px;
+  background-position: 0% 75%, 100% 15%;
 }
 
 #aboutme .aboutwrapper .aboutbox {
   margin-top: 80px;
-  width: 100%;
+  width: 81.38vw;
   height: auto;
   padding: 0 8.75vw;
 }
@@ -236,13 +241,23 @@ body #aboutme .aboutwrapper {
   margin-top: 24px;
 }
 
-.aboutwrapper .skill-card {
-  margin-top: 25px;
-  transition: border 0.6s;
+#aboutme .skill-wrapper {
+  width: 81.38vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
-.aboutwrapper .skill-card:hover {
-  border: 2px solid #01ae6c;
+.skill-wrapper .skill-card {
+  margin-bottom: 0 !important;
+  transition: transform 0.5s;
+}
+
+.skill-wrapper .skill-card:hover {
+  transform: scale(1.02);
 }
 
 /* Design Form Section */
