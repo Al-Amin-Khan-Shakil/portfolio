@@ -393,7 +393,7 @@ body {
 }
 
 .aboutwrapper {
-  width: 375px;
+  width: 100vw;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -402,7 +402,7 @@ body {
   position: relative;
   background-image: url("../images/Mask\ Group.png"), url("../images/Group.png");
   background-repeat: no-repeat, no-repeat;
-  background-position: 100% 0.4%, 0% 24%;
+  background-position: 100% 0.4%, 0% 85%;
 }
 
 .aboutbox {
@@ -460,7 +460,16 @@ body {
   box-shadow: 0 8px 16px 0 rgba(54, 179, 127, 0.24);
 }
 
-.aboutwrapper .skill-card {
+.skill-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100vw;
+}
+
+.skill-wrapper .skill-card {
   width: 327px;
   height: 316px;
   background-color: #ebf0ee;
@@ -469,12 +478,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  margin-bottom: 24px;
-  transition: border 0.1s;
+  transition: transform 0.5s;
 }
 
-.aboutwrapper .skill-card:hover {
-  border: 2px solid #36b37f;
+.skill-wrapper .skill-card:hover {
+  transform: scale(1.02);
 }
 
 .icon-box {
@@ -1027,15 +1035,6 @@ form button {
 
   /* About section start */
 
-  /* body #aboutme {
-    background-image:
-      url("../images/illustration-about-me-2-desktop@2x.png"),
-      url("../images/Frame@2x.png");
-    background-repeat: no-repeat;
-    background-size: 228px 127px, 269px 244px;
-    background-position: 0% 39%, 100% 15%;
-  } */
-
   body #aboutme .aboutwrapper {
     width: 100vw;
     height: auto;
@@ -1078,6 +1077,11 @@ form button {
 
   .aboutwrapper .skill-card {
     margin-top: 25px;
+  }
+
+  .skill-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   /* About section end */
