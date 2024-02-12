@@ -12,10 +12,12 @@
 body {
   background-color: white;
   margin: 0;
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 /* Hero section start */
@@ -849,8 +851,7 @@ form button {
   body {
     background-color: white;
     margin: 0;
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -1016,6 +1017,7 @@ form button {
     justify-content: center;
     align-items: center;
     width: 81.38vw;
+    max-width: 1171px;
     margin-left: 9.31vw;
     margin-right: 9.31vw;
   }
