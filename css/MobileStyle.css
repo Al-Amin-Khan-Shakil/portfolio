@@ -1057,8 +1057,9 @@ form button {
   #aboutme .aboutwrapper .aboutbox {
     margin-top: 80px;
     width: 81.38vw;
+    max-width: 1171px;
     height: auto;
-    padding: 0 8.75vw;
+    padding: 0 4.75vw;
   }
 
   #aboutme .aboutwrapper .about-title {
