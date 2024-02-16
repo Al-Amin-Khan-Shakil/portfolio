@@ -927,10 +927,12 @@ form button {
     align-items: center;
     gap: 24px;
     width: 63.8vw;
+    max-width: 919px;
   }
 
   #hero .title {
     width: 63.8vw;
+    max-width: 919px;
     height: auto;
     font-style: normal;
     text-align: center;
@@ -1002,6 +1004,7 @@ form button {
   body .title-box {
     text-align: center;
     width: 100%;
+    background: none;
   }
 
   .separator {
