@@ -116,40 +116,85 @@ body {
   text-align: center;
 }
 
-.title h1 {
+.title h1 span:nth-child(1) {
   position: relative;
-}
-
-.title h1 b {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #60c095;
-  width: 0;
-  height: 100%;
-  animation: text-box 3s ease forwards;
-}
-
-@keyframes text-box {
-  50% {
-    left: 0;
-    width: 100%;
-  }
-
-  100% {
-    left: 100%;
-    width: 0;
-  }
-}
-
-.title h1 span:not(:last-child) {
   display: block;
   color: #172b4d00;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  animation: text-revel-one 0.1s forwards;
-  animation-delay: 1.4s;
+  animation: text-revel-one 0.01s forwards;
+  animation-delay: 0.74s;
+}
+
+.title h1 span:nth-child(2) {
+  position: relative;
+  display: block;
+  color: #172b4d00;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  animation: text-revel-one 0.01s forwards;
+  animation-delay: 2.24s;
+}
+
+.title h1 span:nth-child(3) {
+  position: relative;
+  display: block;
+  color: #36b37e00;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  animation: text-revel-two 0.01s forwards;
+  animation-delay: 3.74s;
+}
+
+.title h1 span:nth-child(1)::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #36b37e;
+  animation: text-width 1.5s forwards;
+}
+
+.title h1 span:nth-child(2)::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #36b37e;
+  animation: text-width 1.5s forwards;
+  animation-delay: 1.5s;
+}
+
+.title h1 span:nth-child(3)::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #36b37e;
+  animation: text-width 1.5s forwards;
+  animation-delay: 3s;
+}
+
+/* Animation */
+
+@keyframes text-width {
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0;
+  }
 }
 
 @keyframes text-revel-one {
@@ -158,20 +203,13 @@ body {
   }
 }
 
-.title h1:last-child {
-  color: #36b37e00;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  animation: text-revel-two 0.1s forwards;
-  animation-delay: 1.4s;
-}
-
 @keyframes text-revel-two {
   100% {
     color: #36b37e;
   }
 }
+
+/* End of Animation */
 
 .info {
   width: 327px;
