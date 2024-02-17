@@ -122,9 +122,9 @@ const workSection = document.getElementById('worksection');
 
 for (let i = 0; i < projects.length; i += 1) {
   const fetch = workSection.innerHTML;
-  let technologiesHTML = "";
+  let technologiesHTML = '';
 
-  for (let j = 0; j < projects[i].technologies.length; j++) {
+  for (let j = 0; j < projects[i].technologies.length; j += 1) {
     technologiesHTML += `<li>${projects[i].technologies[j]}</li>`;
   }
 
@@ -142,7 +142,6 @@ for (let i = 0; i < projects.length; i += 1) {
       </div>
     </div> ${fetch}`;
 }
-
 
 const modalContainer = document.getElementById('popup');
 const popupOn1 = document.getElementById('popupbtn1');
