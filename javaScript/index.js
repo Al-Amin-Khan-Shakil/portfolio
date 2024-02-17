@@ -46,57 +46,75 @@ mobileQuery.addEventListener('change', handleScreenChange);
 const projects = [
   {
     cardName: 'Multi-Post Stories Gain+Glory',
+    image: 'images/transport.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     cardId: 'popupbtn1',
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     popupDes: "Description of card 06 pragraph 01 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     popupDesTwo: "Description of card 06 pragraph 02 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    liveLink: 'https://mvrva-transport-3zsz.onrender.com/',
+    sourceCode: 'http',
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
+    image: 'images/transport.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     cardId: 'popupbtn2',
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     popupDes: "Description of card 05 pragraph 01 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     popupDesTwo: "Description of card 05 pragraph 02 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    liveLink: 'https://mvrva-transport-3zsz.onrender.com/',
+    sourceCode: 'http',
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
+    image: 'images/transport.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     cardId: 'popupbtn3',
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     popupDes: "Description of card 04 pragraph 01 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     popupDesTwo: "Description of card 04 pragraph 02 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    liveLink: 'https://mvrva-transport-3zsz.onrender.com/',
+    sourceCode: 'http',
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
+    image: 'images/transport.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     cardId: 'popupbtn4',
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     popupDes: "Description of card 03 pragraph 01 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     popupDesTwo: "Description of card 03 pragraph 02 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    liveLink: 'https://mvrva-transport-3zsz.onrender.com/',
+    sourceCode: 'http',
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
+    image: 'images/transport.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     cardId: 'popupbtn5',
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     popupDes: "Description of card 02 pragraph 01 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     popupDesTwo: "Description of card 02 pragraph 02 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    liveLink: 'https://mvrva-transport-3zsz.onrender.com/',
+    sourceCode: 'http',
   },
   {
-    cardName: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    cardName: 'MVRVA Transport',
+    image: 'images/transport.png',
+    technologies: ['Ruby on Rails', 'Bootstrap', 'React', 'Ruby', 'JavaScript', 'Redux', 'PostgreSQL'],
     cardId: 'popupbtn6',
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     popupDes: "Description of card 01 pragraph 01 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     popupDesTwo: "Description of card 01 pragraph 02: printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    liveLink: 'https://mvrva-transport-3zsz.onrender.com/',
+    sourceCode: 'https://github.com/Al-Amin-Khan-Shakil/mvrva-transport-back-end',
   },
 ];
 
@@ -104,21 +122,25 @@ const workSection = document.getElementById('worksection');
 
 for (let i = 0; i < projects.length; i += 1) {
   const fetch = workSection.innerHTML;
+  let technologiesHTML = '';
+
+  for (let j = 0; j < projects[i].technologies.length; j += 1) {
+    technologiesHTML += `<li>${projects[i].technologies[j]}</li>`;
+  }
+
   workSection.innerHTML = `
-  <div class="card item1">
-    <div class="card-info">
-      <h3>${projects[i].cardName}</h3>
-      <ul>
-        <li>${projects[i].technologies[0]}</li>
-        <li>${projects[i].technologies[1]}</li>
-        <li>${projects[i].technologies[2]}</li>
-        <li>${projects[i].technologies[3]}</li>
-      </ul>
-      <div class="btnbar">
-        <p class="btn"><a href="#" id=${projects[i].cardId}>See Project</a></p>
+    <div class="card item1">
+      <img src='${projects[i].image}' alt="project image" class="card-img">
+      <div class="card-info">
+        <h3>${projects[i].cardName}</h3>
+        <ul>
+          ${technologiesHTML}
+        </ul>
+        <div class="btnbar">
+          <p class="btn"><a href="#" id=${projects[i].cardId}>See Project</a></p>
+        </div>
       </div>
-    </div>
-  </div> ${fetch}`;
+    </div> ${fetch}`;
 }
 
 const modalContainer = document.getElementById('popup');
@@ -153,7 +175,9 @@ document.addEventListener('click', (event) => {
         <div id="modal">
           <div class="topsection">
             <div class="offBTN" id="popup-offbtn">&times;</div>
-            <div class="bgPhoto"></div>
+            <div class="bgPhoto">
+              <img src="${projects[index].image}" alt="project image" class="popUp-img">
+            </div>
           </div>
           <div class="bottomsection">
             <div class="components">
@@ -183,8 +207,8 @@ document.addEventListener('click', (event) => {
               <p>${projects[index].popupDesTwo}</p>
             </div>
             <div class="modalbtn">
-              <a href="#">See live <i class="fa fa-external-link"> </i></a>
-              <a href="#">See source <i class="fa fa-github"></i> </a>
+              <a href="${projects[index].liveLink}" target="_blank">See live <i class="fa fa-external-link"> </i></a>
+              <a href="${projects[index].sourceCode}" target="_blank">See source <i class="fa fa-github"></i> </a>
             </div>
           </div>
         </div>`;
