@@ -45,6 +45,18 @@ mobileQuery.addEventListener('change', handleScreenChange);
 
 const projects = [
   {
+    cardName: 'Favorite Books',
+    image: 'images/favorite-book.png',
+    technologies: [ 'JavaScript', 'SPA', 'CSS3', 'HTML5'],
+    cardId: 'popupbtn6',
+    popupTitle: 'Keeping track of hundreds of components',
+    popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
+    popupDes: "Description of card 01 pragraph 01 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupDesTwo: "Description of card 01 pragraph 02: printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    liveLink: 'https://al-amin-khan-shakil.github.io/Favorite-Books-02/',
+    sourceCode: 'https://github.com/Al-Amin-Khan-Shakil/Favorite-Books-02',
+  },
+  {
     cardName: 'FinanceHorizons Business Conference',
     image: 'images/business.png',
     technologies: ['CSS3', 'JavaScript', 'HTML5'],
@@ -103,18 +115,6 @@ const projects = [
     popupDesTwo: "Description of card 02 pragraph 02 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     liveLink: 'https://budgetify-x0fg.onrender.com/expenses/17',
     sourceCode: 'https://github.com/Al-Amin-Khan-Shakil/budgetify',
-  },
-  {
-    cardName: 'MVRVA Transport',
-    image: 'images/transport.png',
-    technologies: ['Ruby on Rails', 'Bootstrap', 'React', 'Ruby', 'JavaScript', 'Redux', 'PostgreSQL'],
-    cardId: 'popupbtn6',
-    popupTitle: 'Keeping track of hundreds of components',
-    popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
-    popupDes: "Description of card 01 pragraph 01 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
-    popupDesTwo: "Description of card 01 pragraph 02: printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
-    liveLink: 'https://mvrva-transport-3zsz.onrender.com/',
-    sourceCode: 'https://github.com/Al-Amin-Khan-Shakil/mvrva-transport-back-end',
   },
 ];
 
