@@ -281,4 +281,25 @@ document.addEventListener('DOMContentLoaded', () => {
     emailInput.value = formData.storeEmail;
     nameInput.value = formData.storeName;
   }
+
+  const sections = document.querySelectorAll('.item');
+
+  const handleScroll = () => {
+    const bottomScreen = window.innerHeight + window.scrollY;
+
+    sections.forEach((section) => {
+      const { top } = section.getBoundingClientRect();
+      const sectionTop = top + window.scrollY;
+
+      if (bottomScreen >= sectionTop + 100) {
+        section.classList.add('appear');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', handleScroll);
+
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
 });
