@@ -34,6 +34,9 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
 .hamburger a:first-child i {
@@ -56,7 +59,7 @@ body {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  z-index: 2;
+  z-index: 101;
   border-radius: 0 0 25px 25px;
   transition: 0.3s;
 }
@@ -925,11 +928,11 @@ form button {
   #hero #navbar {
     display: block;
     width: 100vw;
-    height: 8vh;
-    position: absolute;
+    height: 7vh;
+    position: fixed;
     top: 0;
     left: 0;
-    background: #0000;
+    background: #fffffff3;
     transition: 0s;
   }
 
@@ -1107,7 +1110,7 @@ form button {
       url("../images/illustration-about-me-2-desktop@2x.png"),
       url("../images/Frame@2x.png");
     background-repeat: no-repeat;
-    background-size: 228px 127px, 269px 244px;
+    background-size: 15vw, 16vw;
     background-position: 0% 88%, 100% 15%;
   }
 
