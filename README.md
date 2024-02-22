@@ -30,7 +30,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Demo Portfolio <a name="about-project"></a>
+# 📖 Portfolio <a name="about-project"></a>
 
 **Portfolio** is a simple portfolio website to showcase my projects and skills.
 
