@@ -1312,4 +1312,18 @@ form button {
   .chevron {
     margin-bottom: 100px;
   }
+
+  .showcase-title {
+    margin-top: 80px !important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .showcase-title {
+    margin-top: 100px !important;
+  }
+
+  .chevron {
+    margin-bottom: 550px !important;
+  }
 }
