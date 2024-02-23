@@ -128,8 +128,10 @@ for (let i = 0; i < projects.length; i += 1) {
     technologiesHTML += `<li>${projects[i].technologies[j]}</li>`;
   }
 
+  const cardId = `cardItem${i}`;
+
   workSection.innerHTML = `
-    <div class="card item1">
+    <div class="card item1" id="${cardId}">
       <img src='${projects[i].image}' alt="project image" class="card-img">
       <div class="card-info">
         <h3>${projects[i].cardName}</h3>
@@ -137,7 +139,7 @@ for (let i = 0; i < projects.length; i += 1) {
           ${technologiesHTML}
         </ul>
         <div class="btnbar">
-          <p class="btn"><a href="#" id=${projects[i].cardId}>See Project</a></p>
+          <p class="btn"><a href="#${cardId}" id=${projects[i].cardId}>See Project</a></p>
         </div>
       </div>
     </div> ${fetch}`;
