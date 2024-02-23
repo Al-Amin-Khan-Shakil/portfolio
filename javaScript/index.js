@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const { top } = section.getBoundingClientRect();
       const sectionTop = top + window.scrollY;
 
-      if (bottomScreen >= sectionTop + 100) {
+      if (bottomScreen >= sectionTop + 60) {
         section.classList.add('appear');
       }
     });

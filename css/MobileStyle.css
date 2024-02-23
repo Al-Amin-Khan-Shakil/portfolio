@@ -1305,3 +1305,9 @@ form button {
   opacity: 1;
   transform: translateY(0);
 }
+
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+  .chevron {
+    margin-bottom: 100px;
+  }
+}
