@@ -21,6 +21,9 @@ body {
 }
 
 /* Hero section start */
+#hero {
+  height: 100vh;
+}
 
 #hero header {
   position: relative;
@@ -97,10 +100,6 @@ body {
 .banner {
   width: 100vw;
   height: 653.32px;
-  background-image: url("../images/header-illsutration-mobile@2x.png");
-  background-position: center top;
-  background-size: 100%;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -917,10 +916,6 @@ form button {
   /* Hero section start */
 
   #hero {
-    background-image: url("../images/Header-llustration-desktop@2x.png");
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1045,10 +1040,6 @@ form button {
     margin: 0;
   }
 
-  .chevron {
-    margin: 84px auto 400px;
-  }
-
   /* Hero section end */
 
   /* Work section start */
@@ -1108,8 +1099,7 @@ form button {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 100px;
-    background-image:
-      url("../images/illustration-about-me-2-desktop@2x.png"),
+    background-image: url("../images/illustration-about-me-2-desktop@2x.png"),
       url("../images/Frame@2x.png");
     background-repeat: no-repeat;
     background-size: 15vw, 16vw;
@@ -1154,8 +1144,7 @@ form button {
   /* Contact form start */
 
   body #form-section {
-    background-image:
-      url("../images/Frame@contact.png"),
+    background-image: url("../images/Frame@contact.png"),
       url("../images/illustration-2-contact-form-desktop@2x.png"),
       url("../images/Frame@contact-2.png");
     background-repeat: no-repeat;
@@ -1309,10 +1298,6 @@ form button {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1100px) {
-  .chevron {
-    margin-bottom: 100px;
-  }
-
   .showcase-title {
     margin-top: 80px !important;
   }
